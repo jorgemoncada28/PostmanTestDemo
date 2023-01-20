@@ -198,29 +198,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "Request-Jorge",
-					"id": "94525566-7598-43e1-8add-7c7f63ae3d05",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{url}}/api/users/1111222",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"users",
-								"1111222"
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "d6dcf226-4df8-477d-bc7d-602a858b7275"
