@@ -417,6 +417,29 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "NewBranchRequest",
+					"id": "74dc06f0-7d57-4716-9ee6-50edea03b85c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/1111222",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1111222"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af061d80-a13c-4313-bb24-bc27b17bacca"
