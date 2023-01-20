@@ -221,6 +221,29 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "request Jm23",
+					"id": "6bcd8ace-5c5f-4643-a703-99cf86979ca0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/1111222",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1111222"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "d6dcf226-4df8-477d-bc7d-602a858b7275"
