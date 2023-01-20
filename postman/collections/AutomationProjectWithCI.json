@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "de27dad5-48a4-4f02-8e39-7ed1122c22f7",
+		"name": "AutomationProjectWithCI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "25441942-de27dad5-48a4-4f02-8e39-7ed1122c22f7"
+	},
+	"item": [
+		{
+			"name": "Module-Authentication",
+			"item": [
+				{
+					"name": "Request1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6f1eda3b-ae84-4e27-b3a8-53c4617685cb",
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "2032d4ea-da64-4914-97b9-511ea8d268ce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users?page=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f73d1090-d8a8-4e36-87ea-933baa5d4504",
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {",
+									"  pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "045a0e95-4dab-43e0-a1de-625845354b1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/23",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "782c7ba8-cc86-4d4e-9ac6-027eeda5b111",
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {",
+									"  pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "e4aff226-b6a8-4769-955f-6725437ffa1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/3333",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"3333"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c849ade1-b62e-4514-bd04-5cb29987d839",
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {",
+									"  pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "96e080a9-0213-4d0d-be08-605dfe44806b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/22222",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"22222"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "119beda6-3d41-4a58-96e4-e11cbce43a00",
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {",
+									"  pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "4a93d54c-81c4-4a9b-8283-9bceca8e8e24",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/1111222",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1111222"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d6dcf226-4df8-477d-bc7d-602a858b7275"
+		},
+		{
+			"name": "Module-Sales",
+			"item": [
+				{
+					"name": "RequestSales1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c71420bc-84d9-4265-977d-3a52d6701a3b",
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "bd5363d1-4377-4262-8059-8ce8804203cc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users?page=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RequestSales2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d6f15da6-f1f7-4119-8117-dd9e6c0aed31",
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {",
+									"  pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "d6b5c249-611c-4aa2-aaf0-5118ca2e7275",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/23",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"23"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RequestSales3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "22362dd6-d25b-4ac4-82ac-edff22cd9578",
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {",
+									"  pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "60e07d53-a0b0-4767-b8db-6cfe927cdf19",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/3333",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"3333"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RequestSales4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8541c11f-c0d3-40e1-a2fe-c23883686a06",
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {",
+									"  pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "45a58f7c-41a4-42a5-94ac-b8faef1111bc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/22222",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"22222"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RequestSales5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e2136029-aef5-43f1-a328-d5a6efeb9422",
+								"exec": [
+									"pm.test(\"Status code is 404\", () => {",
+									"  pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "c29682df-e3c6-4a65-9ba0-91da734a79d9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/users/1111222",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1111222"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "af061d80-a13c-4313-bb24-bc27b17bacca"
+		}
+	]
+}
